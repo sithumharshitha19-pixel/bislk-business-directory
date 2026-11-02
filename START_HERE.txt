@@ -1,0 +1,31 @@
+BisLK Updated — First steps in VS Code (Windows)
+
+1. EXTRACT BisLK_Project_Updated.zip into a NEW folder.
+   Do not replace the old files individually; the new bislk.db uses expanded fields.
+2. In VS Code: File > Open Folder > BisLK_Project_Updated.
+3. Terminal > New Terminal.
+4. Type these one at a time:
+
+   python -m pip install -r requirements.txt
+   python seed.py
+   python -m streamlit run app.py
+
+5. Ctrl+click the local URL (usually http://localhost:8501).
+6. Before your viva, while internet is available, run:
+
+   python cache_images.py
+
+   This optionally downloads the FIVE verified, openly licensed Wikimedia photos
+   for OFFLINE display. Source/author/licence entries remain in the database.
+
+7. Main navigation: Discover businesses, Business details, Add business,
+   Upload business photo, Add review, Register user, Reports, Database & sources.
+
+8. For demo: choose Queen's Hotel to display its real photo, filter Kurunegala,
+   enter a new business, add an original user review, show two reports.
+
+IMPORTANT: 15 real businesses, 5 verified photos. The other businesses show
+clearly-labelled placeholders until your group adds authorized photos.
+Public ratings are attributed snapshots, not fake first-party user reviews.
+
+See README.md for full instructions and PHOTO_LICENSES.md for image credits.
